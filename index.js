@@ -12,10 +12,7 @@ module.exports = {
       data.from = data.email;
     }
     var smtpOption = mailer.smtp.parse(data);
-    console.log(smtpOption);
     var mailOption = mailer.content.parse(data);
-    console.log(mailOption);
-
     return {
       smtp: smtpOption,
       mail: mailOption

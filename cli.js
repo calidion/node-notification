@@ -21,9 +21,9 @@ var options = notifier.parse(cli.flags);
 var type = cli.flags['type'];
 switch(type) {
   case 'mail':
-  default :
     var sender = notifier.senders.mailer;
     sender.send(options.smtp, options.mail, function(error, data) {
       console.log(error, data);
     });
+    break;
 }
