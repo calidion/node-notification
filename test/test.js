@@ -40,6 +40,8 @@ describe('node-notification node module', function () {
       templateId: '1'
     };
     var sms = notifier.senders.sms;
+    console.log(config);
+    console.log(data);
     sms.send(config, data, function(error, data) {
       assert.equal(true, !error);
       assert.equal(true, data.statusCode === '000000');

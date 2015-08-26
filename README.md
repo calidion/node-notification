@@ -12,6 +12,24 @@ $ npm install --save node-notification
 
 ## Usage
 
+
+###命令行方式运行
+
+```sh
+notifier --type email --host sohu.com --port 80 --secure true \
+--email no@sdfs.com --password password  --to to@email.com \
+--subject "hello world!" --body "Greeting from"
+```
+
+```sh
+notifier --type sms --url url --port 8883 --v "2013-12-26" \
+--appId appId --account-sid accountSid --account-token accountToken\
+--phone phone --templateId "1" \
+--params param1 --params param2 --params param3
+```
+
+
+###程序方式
 ```js
 var notifier = require('node-notification');
 //短信
@@ -54,7 +72,6 @@ sms.send(config, data, function(error, data) {
   done();
 });
 ```
-
 
 ## License
 
