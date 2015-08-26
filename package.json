@@ -21,6 +21,7 @@
   "dependencies": {
     "meow": "^3.3.0",
     "node-form-validator": "^0.1.3",
+    "node-ytx": "^0.1.1",
     "nodemailer": "^1.4.0"
   },
   "devDependencies": {

@@ -24,4 +24,26 @@ describe('node-notification node module', function () {
       done();
     });
   });
+
+  it('should be able to send sms notification', function (done) {
+    var config = {
+      url: 'sandboxapp.cloopen.com',
+        port: 8883,
+        version: '2013-12-26',
+        appId: process.env.NN_APPID,
+        accountSid: process.env.NN_ACCOUNTSID,
+        accountToken: process.env.NN_ACCOUNTTOKEN
+    };
+    var data = {
+      phone: process.env.NN_PHONE,
+      params: [' 云通讯测试', "" + Math.round(Math.random() * 1000000) ],
+      templateId: '1'
+    };
+    var sms = notifier.senders.sms;
+    sms.send(config, data, function(error, data) {
+      assert.equal(true, !error);
+      assert.equal(true, data.statusCode === '000000');
+      done();
+    });
+  });
 });

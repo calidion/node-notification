@@ -5,7 +5,7 @@ module.exports = {
     sms: require('./lib/senders/sms')
   },
 
-  parse: function(data) {
+  parseEmail: function (data) {
 
     var mailer = this.senders.mailer;
     if (!data.from) {
@@ -17,6 +17,17 @@ module.exports = {
       smtp: smtpOption,
       mail: mailOption
     };
+  },
+  parseSMS: function (data) {
+    var sms = this.senders.sms;
+    data.version = data.v;
+    data.templateId = "" + data.templateId;
+    var config = sms.config.parse(data);
+    console.log(config);
+    var userData = sms.data.parse(data);
+    return {
+      config: config,
+      data: userData
+    };
   }
-
 };

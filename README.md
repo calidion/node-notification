@@ -13,9 +13,26 @@ $ npm install --save node-notification
 ## Usage
 
 ```js
-var nodeNotification = require('node-notification');
-
-nodeNotification('Rainbow');
+var notifier = require('node-notification');
+//短信
+    var mailOptions = {
+      from: process.env.NN_FROM,
+      to: process.env.NN_TO,
+      subject: 'hello world!',
+      body: 'Greeting from'
+    };
+    var smtpOptions = {
+      host: 'smtp.exmail.qq.com',
+      port: 465,
+      secure: 'true',
+      password: process.env.NN_PASSWORD,
+      email: process.env.NN_EMAIL
+    };
+    var sender = notifier.senders.mailer;
+    sender.send(smtpOptions, mailOptions, function(error, data) {
+    //data:返回的json数据
+    });
+    
 ```
 
 
