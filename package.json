@@ -1,6 +1,6 @@
 {
   "name": "node-notification",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node Notification with Email, SMS.",
   "author": {
     "name": "JSSDKCN",
