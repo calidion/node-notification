@@ -8,7 +8,8 @@ describe('node-notification node module', function () {
       from: process.env.NN_FROM,
       to: process.env.NN_TO,
       subject: 'hello world!',
-      body: 'Greeting from'
+      text: 'Greeting from',
+      html: '<h1><red>hood</red></h1>'
     };
     var smtpOptions = {
       host: 'smtp.exmail.qq.com',
