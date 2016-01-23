@@ -1,4 +1,4 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
 > Node Notification with Email, SMS.
 
@@ -84,3 +84,5 @@ MIT © [JSSDKCN](blog.3gcnbeta.com)
 [travis-url]: https://travis-ci.org/JSSDKCN/node-notification
 [daviddm-image]: https://david-dm.org/JSSDKCN/node-notification.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/JSSDKCN/node-notification
+[coveralls-image]: https://coveralls.io/repos/JSSDKCN/node-notification/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/github/JSSDKCN/node-notification?branch=master

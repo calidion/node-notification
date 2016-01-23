@@ -5,21 +5,25 @@ var notifier = require('../');
 describe('node-notification node module', function () {
   it('should be able to send email notification', function (done) {
     var mailOptions = {
-      from: process.env.NN_FROM,
-      to: process.env.NN_TO,
+      from: process.env.NN_MAIL_FROM,
+      to: process.env.NN_MAIL_TO,
       subject: 'hello world!',
       text: 'Greeting from',
       html: '<h1><red>hood</red></h1>'
     };
     var smtpOptions = {
-      host: 'smtp.exmail.qq.com',
-      port: 465,
+      host: process.env.NN_MAIL_SERVER,
+      port: process.env.NN_MAIL_PORT,
       secure: 'true',
-      password: process.env.NN_PASSWORD,
-      email: process.env.NN_EMAIL
+      password: process.env.NN_MAIL_PASSWORD,
+      email: process.env.NN_MAIL_EMAIL
     };
+    console.log(smtpOptions);
     var sender = notifier.senders.mailer;
     sender.send(smtpOptions, mailOptions, function(error, data) {
+      if (error) {
+        console.error(error, data);
+      }
       assert.equal(true, !error);
       assert.equal(true, data.response !== "");
       done();
@@ -31,12 +35,12 @@ describe('node-notification node module', function () {
       url: 'sandboxapp.cloopen.com',
         port: 8883,
         version: '2013-12-26',
-        appId: process.env.NN_APPID,
-        accountSid: process.env.NN_ACCOUNTSID,
-        accountToken: process.env.NN_ACCOUNTTOKEN
+        appId: process.env.NN_SMS_APPID,
+        accountSid: process.env.NN_SMS_ACCOUNTSID,
+        accountToken: process.env.NN_SMS_ACCOUNTTOKEN
     };
     var data = {
-      phone: process.env.NN_PHONE,
+      phone: process.env.NN_SMS_PHONE,
       params: [' 云通讯测试', "" + Math.round(Math.random() * 1000000) ],
       templateId: '1'
     };
