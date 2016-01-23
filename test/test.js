@@ -18,7 +18,6 @@ describe('node-notification node module', function () {
       password: process.env.NN_MAIL_PASSWORD,
       email: process.env.NN_MAIL_EMAIL
     };
-    console.log(smtpOptions);
     var sender = notifier.senders.mailer;
     sender.send(smtpOptions, mailOptions, function(error, data) {
       if (error) {
