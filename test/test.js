@@ -43,7 +43,7 @@ describe('node-notification node module', function () {
     var sms = notifier.senders.sms;
     sms.send(config, data, function(error, data) {
       assert.equal(true, !error);
-      assert.equal(true, data.statusCode === '000000');
+      assert.equal(true,  ['000000', '160040', '160038'].indexOf(data.statusCode) !== -1);
       done();
     });
   });
