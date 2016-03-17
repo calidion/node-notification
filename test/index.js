@@ -1,7 +1,9 @@
 'use strict';
+/* eslint space-before-function-paren: [2, "never"] */
+/* eslint-env es6 */
+
 var assert = require('assert');
 var notifier = require('../');
-console.log(process.env);
 
 describe('node-notification node module', function() {
   it('should be able to send email notification', function(done) {
