@@ -1,4 +1,5 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# node-notification [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
 
 > Node Notification with Email, SMS.
 
@@ -9,27 +10,8 @@
 $ npm install --save node-notification
 ```
 
-
 ## Usage
 
-
-###命令行方式运行
-
-```sh
-notifier --type email --host sohu.com --port 80 --secure true \
---email no@sdfs.com --password password  --to to@email.com \
---subject "hello world!" --body "Greeting from"
-```
-
-```sh
-notifier --type sms --url url --port 8883 --v "2013-12-26" \
---appId appId --account-sid accountSid --account-token accountToken\
---phone phone --templateId "1" \
---params param1 --params param2 --params param3
-```
-
-
-###程序方式
 ```js
 var notifier = require('node-notification');
 //短信
@@ -75,7 +57,7 @@ sms.send(config, data, function(error, data) {
 
 ## License
 
-MIT © [JSSDKCN](blog.3gcnbeta.com)
+Apache-2.0 © [calidion](calidion.github.io)
 
 
 [npm-image]: https://badge.fury.io/js/node-notification.svg
@@ -84,5 +66,5 @@ MIT © [JSSDKCN](blog.3gcnbeta.com)
 [travis-url]: https://travis-ci.org/JSSDKCN/node-notification
 [daviddm-image]: https://david-dm.org/JSSDKCN/node-notification.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/JSSDKCN/node-notification
-[coveralls-image]: https://coveralls.io/repos/JSSDKCN/node-notification/badge.svg?branch=master&service=github
-[coveralls-url]: https://coveralls.io/github/JSSDKCN/node-notification?branch=master
+[coveralls-image]: https://coveralls.io/repos/JSSDKCN/node-notification/badge.svg
+[coveralls-url]: https://coveralls.io/r/JSSDKCN/node-notification
