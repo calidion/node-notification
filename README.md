@@ -62,9 +62,9 @@ Apache-2.0 © [calidion](calidion.github.io)
 
 [npm-image]: https://badge.fury.io/js/node-notification.svg
 [npm-url]: https://npmjs.org/package/node-notification
-[travis-image]: https://travis-ci.org/JSSDKCN/node-notification.svg?branch=master
-[travis-url]: https://travis-ci.org/JSSDKCN/node-notification
-[daviddm-image]: https://david-dm.org/JSSDKCN/node-notification.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/JSSDKCN/node-notification
-[coveralls-image]: https://coveralls.io/repos/JSSDKCN/node-notification/badge.svg
-[coveralls-url]: https://coveralls.io/r/JSSDKCN/node-notification
+[travis-image]: https://travis-ci.org/calidion/node-notification.svg?branch=master
+[travis-url]: https://travis-ci.org/calidion/node-notification
+[daviddm-image]: https://david-dm.org/calidion/node-notification.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/calidion/node-notification
+[coveralls-image]: https://coveralls.io/repos/calidion/node-notification/badge.svg
+[coveralls-url]: https://coveralls.io/r/calidion/node-notification
