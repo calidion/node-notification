@@ -1,6 +1,6 @@
 {
   "name": "node-notification",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node Notification with Email, SMS.",
   "homepage": "",
   "author": {
@@ -16,11 +16,11 @@
     ""
   ],
   "devDependencies": {
-    "eslint-config-xo-space": "^0.7.0",
+    "eslint-config-xo-space": "^0.13.0",
     "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0",
+    "gulp-eslint": "^2.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.10.3",
+    "gulp-istanbul": "^1.0.0",
     "gulp-mocha": "^2.0.0",
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
@@ -39,7 +39,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "node-form-validator": "^0.4.0",
+    "node-form-validator": "^0.6.1",
     "node-ytx": "^0.3.0",
     "nodemailer": "^2.3.0"
   }
