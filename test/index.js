@@ -23,12 +23,6 @@ describe('node-notification node module', function() {
     };
 
     var sender = notifier.senders.mailer;
-    console.log(smtpOptions);
-    console.log(mailOptions);
-    
-    console.log(sender.smtp.parse(smtpOptions));
-    console.log(sender.content.parse(mailOptions));
-
     assert.equal(false, !sender.smtp.parse(smtpOptions));
     assert.equal(false, !sender.content.parse(mailOptions));
   });
