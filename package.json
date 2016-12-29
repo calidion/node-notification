@@ -10,8 +10,7 @@
   },
   "files": [
     "lib"
-  ],
-  "main": "lib/index.js",
+  ], "main": "lib/index.js",
   "keywords": [
     ""
   ],
@@ -21,6 +20,7 @@
     "gulp-eslint": "^3.0.1",
     "gulp-exclude-gitignore": "^1.1.1",
     "gulp-istanbul": "^1.1.1",
+    "eslint-config-xo": "^0.17.0",
     "gulp-mocha": "^3.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-nsp": "^2.4.2",
